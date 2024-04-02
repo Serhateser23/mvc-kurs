@@ -1,0 +1,82 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <h1>Om mig</h1>
+    <div class="startpage-grid"> 
+        <div class="container-start">
+            <div class="element4">
+                
+                <img class="gallery-image" src="{{ asset('build/images/july.jpg') }}" alt="">
+
+                
+            </div>
+
+                <div class="element1">
+
+                Trevlig utfyllnadsbild från php-kursen, kalenderbilden för juli månad.
+
+                </div>
+                  
+        </div>
+
+        <div class="container-start">
+            <div class="element4">
+                
+                <img class="gallery-image" src="{{ asset('build/images/august.jpg') }}" alt="">
+
+                
+            </div>
+
+                <div class="element1">
+
+                Trevlig utfyllnadsbild från php-kursen, kalenderbilden för augusti månad.
+
+                </div>
+                  
+        </div>
+        <div class="container-start">
+            <div class="element4">
+                
+                <img class="gallery-image" src="{{ asset('build/images/september.jpg') }}" alt="">
+
+                
+            </div>
+
+                <div class="element1">
+
+                Trevlig utfyllnadsbild från php-kursen, kalenderbilden för september månad.
+
+                </div>
+                  
+        </div>
+    </div>
+
+        <div class="startpage-grid-3">
+        
+            <div class="container-start-last"> 
+                 <div class="text1-title"> 
+                    Välkommen till Serhats sida, kort om mig:
+                </div>
+                <div class="text1">
+                    Serhat heter jag och är 37 år gammal. Jag har drivit eget bolag i många år, 
+                    en del utav dessa projekt har varit helt webbaserade. Jag har däremot aldrig kunnat koda och alltid varit beroende utav programmerare. 
+                    Så jag tänkte att det är dags att lära mig koda så jag kan flytta till varmare breddgrader och jobba från en hängmatta i solen! 
+                </div>
+            </div>
+    
+            <div class="container-start-last"> 
+                <div class="element">
+                    
+                    
+                    
+                        <img class="me" src="{{ asset('build/images/me.png') }}" alt="">
+                    
+                    
+                </div>
+            </div>
+    
+        </div>
+
+{% endblock %}

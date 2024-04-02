@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="{{ asset('img/glider.svg') }}">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+    </head>
+    <body>
+     
+            
+    <div class="topnav">
+        <ul>
+            <li><a href="{{ path('home') }}">Start</a></li>
+            <li><a href="{{ path('about') }}">Om kursen</a></li>
+            <li><a href="{{ path('lucky_number') }}">Lucky number</a></li>
+            <li><a href="{{ path('redovisning') }}">Redovisning</a></li>
+        </ul>
+    </div>
+   
+        <div class="header">
+            <img class="logo" src="{{ asset('build/images/logo.png') }}" alt="logo">
+            <div class="site-header">
+                <span class="site-title">My Symfony Site</span>
+            </div>
+            
+        </div>
+        <div class="main">
+        {% block body %}
+        
+
+        {% endblock %}
+    </div>
+
+    <div class="footer">
+        <p>
+            En footer med lite text.
+        </p>
+    </div>
+    </body>
+
+  
+</html>

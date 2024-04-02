@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+
+<div class="page-grid-2">
+    <div class="container-start-last">
+        <h1>Om kursen</h1>
+        Kursens fokus är objektorienterade programmeringstekniker i programmeringsspråket PHP. 
+        Klassiska objektorienterade konstruktioner hanteras tillsammans med objektorienterad programmering i webbaserat ramverk 
+        tillsammans med databaser samt enhetstestning.
+    </div>
+    <div class="container-start-last">
+    <br>
+        <a href="https://github.com/dbwebb-se/mvc/tree/main">
+            <img class="github-image" src="{{ asset('build/images/github.png') }}" alt=""><br>
+            Länk till kursens repo
+        </a>
+        <br>
+        <a href="https://github.com/Serhateser23/mvc-kurs">
+            <img class="github-image" src="{{ asset('build/images/github.png') }}" alt=""><br>
+            Länk till mitt repo
+        </a>
+    </div>
+</div>
+
+{% endblock %}

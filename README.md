@@ -2,7 +2,7 @@ First commit Git!
 
 ======================
 
-![screenshot](assts/images/screen.png)
+![screenshot](assets/images/screen.png)
 First image of first version of the website.
 
 1.0.1

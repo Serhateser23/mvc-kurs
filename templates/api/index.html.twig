@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+
+<div class="page-grid-2">
+    <div class="container-start-last">
+        <h1>API routes</h1>
+        {% for description, path in routes %}
+        <li><a href="{{ path }}">{{ description }}: {{ path }}</a></li>
+    {% endfor %}
+    </div>
+    <div class="container-start-last">
+    <br>
+
+    </div>
+</div>
+
+{% endblock %}
