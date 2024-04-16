@@ -48,10 +48,10 @@ class LuckyControllerTwig extends AbstractController
     {
         return $this->render('about.html.twig');
     }
-    #[Route("/redovisning", name: "redovisning")]
+    #[Route("/report", name: "report")]
     public function redovisning(): Response
     {
-        return $this->render('redovisning.html.twig');
+        return $this->render('report.html.twig');
     }
     
 }

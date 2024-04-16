@@ -7,9 +7,11 @@
 <div class="page-grid-2">
     <div class="container-start-last">
         <h1>API routes</h1>
+        <ul>
         {% for description, path in routes %}
-        <li><a href="{{ path }}">{{ description }}: {{ path }}</a></li>
+        <li><a href="{{ path('api_quote') }}">{{ description }}: {{ path }}</a></li>
     {% endfor %}
+</ul>
     </div>
     <div class="container-start-last">
     <br>
