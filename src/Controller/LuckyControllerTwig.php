@@ -53,5 +53,5 @@ class LuckyControllerTwig extends AbstractController
     {
         return $this->render('report.html.twig');
     }
-    
+
 }
